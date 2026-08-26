@@ -37,9 +37,6 @@ hand-editing it (ask Claude to re-run the generator).
 
 ## Note on images
 
-The 3 logo images inside this shortcode's output currently point to
-`https://michael-burapha.github.io/buscharter-preview-A/assets/...` (this repo's
-GitHub Pages) as a temporary source. For production, upload
-`logo-buscharter-au.png`, `logo-bushire-nz.png`, and `logo-busbank.png` to the
-WordPress Media Library and swap the URLs in the plugin file's `<img src="...">`
-tags.
+The 3 logo images now point to the WordPress Media Library
+(`https://buscharter.com.au/wp-content/uploads/2026/08/...`) instead of this
+repo's GitHub Pages -- no external dependency for production.
