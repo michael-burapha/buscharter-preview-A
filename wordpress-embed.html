@@ -5,16 +5,13 @@
  affects the rest of the site's header, nav, or footer styling.
  Typography/colors matched to buscharter.com.au: Lato (headings),
  Red Hat Display (body), #DA1A20 brand red, #0D0001 body text.
-
- IMPORTANT — logo images currently point to:
+ IMPORTANT -- logo images currently point to:
    https://michael-burapha.github.io/buscharter-preview-A/assets/...
  That's a temporary GitHub-hosted copy so this works immediately.
  For production, upload these 3 files to your WordPress Media
- Library instead and swap each <img src="..."> below to the
- resulting wp-content/uploads/... URL:
-   - logo-buscharter-au.png
-   - logo-bushire-nz.png
-   - logo-busbank.png
+ Library instead and swap each img src below to the resulting
+ wp-content/uploads/... URL: logo-buscharter-au.png,
+ logo-bushire-nz.png, logo-busbank.png
 ============================================================ -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
@@ -24,9 +21,6 @@
   #sbl-embed h1, #sbl-embed h2, #sbl-embed h3 { font-family: Lato, system-ui, sans-serif; }
   #sbl-embed a { color: #0D0001; text-decoration: none; }
   #sbl-embed a:hover { color: #DA1A20; }
-</style>
-
-<style>
 .dc-h13:hover { opacity: 0.8; }
 .dc-h15:hover { border-color: #DA1A20; background: #FDF3F4; color: #DA1A20; }
 .dc-h16:hover { border-color: #DA1A20; background: #FDF3F4; color: #DA1A20; }
@@ -82,21 +76,15 @@
 .dc-h71:hover { border-color: #DA1A20; background: #FDF3F4; color: #DA1A20; }
 .dc-h72:hover { background: #B9161B; color: #FFFFFF; }
 .dc-h88:hover { opacity: 0.75; }
-</style>
-
-<style>
   /* --- Responsive layout --- */
   #sbl-embed { overflow-x: hidden; }
-
   .nav-toggle-checkbox { display: none; }
   .logo-badge { display: flex !important; justify-content: flex-start !important; }
   .nav-toggle-label { display: none; cursor: pointer; align-items: center; justify-content: center; padding: 6px; margin-left: auto; }
   .site-header { position: relative; }
-
   @media (max-width: 900px) {
     .topbar-info { display: none !important; }
     .topbar-row { padding: 10px 20px !important; }
-
     .site-header-inner { justify-content: space-between !important; padding: 14px 20px !important; gap: 16px !important; }
     .nav-toggle-label { display: flex !important; }
     .main-nav {
@@ -130,27 +118,20 @@
       text-align: center !important;
       border-bottom: none !important;
     }
-
     .breadcrumb-row { padding: 12px 20px !important; }
-
     .hero-section { padding: 40px 20px 8px !important; }
-
     .locations-section { padding: 28px 20px 64px !important; gap: 18px !important; }
-
     .location-card-grid { grid-template-columns: 1fr !important; }
     .location-sidebar { border-right: none !important; border-bottom: 1px solid #E3E3E8 !important; padding: 24px 22px !important; }
     .location-chips-wrap { padding: 22px !important; }
     .location-chips { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
-
     .cta-inner { flex-direction: column !important; align-items: flex-start !important; padding: 40px 20px !important; gap: 18px !important; }
-
     .footer-grid { grid-template-columns: 1fr !important; gap: 40px !important; padding: 48px 20px 0 !important; }
     .footer-contact-col { align-items: center !important; text-align: center !important; }
     .footer-quote-btn { align-self: center !important; }
     .footer-badges { justify-content: center !important; }
     .footer-bottom-row { padding: 32px 20px 16px !important; flex-wrap: wrap !important; justify-content: center !important; gap: 16px !important; }
   }
-
   @media (max-width: 640px) {
     .location-chips { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 8px !important; }
     .location-chips a { padding: 12px 10px !important; font-size: 13.5px !important; text-align: center !important; }
@@ -158,16 +139,13 @@
     .footer-logo { height: 90px !important; }
   }
 </style>
-
 <div id="sbl-embed">
   <section class="hero-section" style="width: 100%; padding: 72px 40px 8px; box-sizing: border-box;">
     <div style="display: inline-flex; align-items: center; gap: 10px; background: #FDF3F4; color: #DA1A20; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 14px; border-radius: 999px;">Global network</div>
     <h1 class="hero-title" style="font-size: 29px; line-height: 1.2; font-weight: 700; letter-spacing: normal; margin: 20px 0 0;"><span style="color: #DA1A20;">Bus Charter</span> Locations by Country &amp; City</h1>
     <p style="font-size: 16px; line-height: 1.65; color: #0D0001; margin: 20px 0 0; max-width: 72ch; text-wrap: pretty;">Charter a bus in four countries through one group of operators. Each region is run by a local team with local drivers, local accreditation, and the same best-value guarantee. Choose your country to see the cities we cover.</p>
   </section>
-
   <section class="locations-section" style="width: 100%; padding: 48px 40px 96px; box-sizing: border-box; display: flex; flex-direction: column; gap: 28px;">
-
     <article data-screen-label="Australia" class="location-card" style="border: 1px solid #E3E3E8; border-radius: 16px; overflow: hidden; background: #FFFFFF; box-shadow: 0 1px 2px rgba(31,31,39,0.05);">
       <div class="location-card-grid" style="display: grid; grid-template-columns: minmax(0, 320px) minmax(0, 1fr); align-items: stretch;">
         <div class="location-sidebar" style="background: #F4F4F6; border-right: 1px solid #E3E3E8; padding: 36px 32px; display: flex; flex-direction: column; gap: 18px;">
@@ -204,7 +182,6 @@
         </div>
       </div>
     </article>
-
     <article data-screen-label="New Zealand" class="location-card" style="border: 1px solid #E3E3E8; border-radius: 16px; overflow: hidden; background: #FFFFFF; box-shadow: 0 1px 2px rgba(31,31,39,0.05);">
       <div class="location-card-grid" style="display: grid; grid-template-columns: minmax(0, 320px) minmax(0, 1fr); align-items: stretch;">
         <div class="location-sidebar" style="background: #F4F4F6; border-right: 1px solid #E3E3E8; padding: 36px 32px; display: flex; flex-direction: column; gap: 18px;">
@@ -232,7 +209,6 @@
         </div>
       </div>
     </article>
-
     <article data-screen-label="Canada" class="location-card" style="border: 1px solid #E3E3E8; border-radius: 16px; overflow: hidden; background: #FFFFFF; box-shadow: 0 1px 2px rgba(31,31,39,0.05);">
       <div class="location-card-grid" style="display: grid; grid-template-columns: minmax(0, 320px) minmax(0, 1fr); align-items: stretch;">
         <div class="location-sidebar" style="background: #F4F4F6; border-right: 1px solid #E3E3E8; padding: 36px 32px; display: flex; flex-direction: column; gap: 18px;">
@@ -266,7 +242,6 @@
         </div>
       </div>
     </article>
-
     <article data-screen-label="USA" class="location-card" style="border: 1px solid #E3E3E8; border-radius: 16px; overflow: hidden; background: #FFFFFF; box-shadow: 0 1px 2px rgba(31,31,39,0.05);">
       <div class="location-card-grid" style="display: grid; grid-template-columns: minmax(0, 320px) minmax(0, 1fr); align-items: stretch;">
         <div class="location-sidebar" style="background: #F4F4F6; border-right: 1px solid #E3E3E8; padding: 36px 32px; display: flex; flex-direction: column; gap: 18px;">
@@ -305,11 +280,9 @@
       </div>
     </article>
   </section>
-
   <section style="width: 100%; padding: 0 40px 48px; box-sizing: border-box; text-align: center;">
     <p style="font-size: 14px; margin: 0;"><a target="_blank" rel="noopener noreferrer" href="#" style="color: #8A8A96; font-weight: 500;" class="dc-h88">Learn more about our partnership with <span style="color: #DA1A20; font-weight: 600;">BusBank</span></a></p>
   </section>
-
   <section class="cta-section" style="background: #F4F4F6; border-top: 1px solid #E3E3E8;">
     <div class="cta-inner" style="max-width: 1280px; margin: 0 auto; padding: 56px 40px; display: flex; align-items: center; justify-content: space-between; gap: 40px;">
       <div>
@@ -321,5 +294,4 @@
       </div>
     </div>
   </section>
-
 </div>
