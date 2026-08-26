@@ -151,7 +151,7 @@ function bcsbl_render_service_by_location() {
           <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
             <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8A96;">Powered by</div>
             <a target="_blank" rel="noopener noreferrer" href="https://buscharter.com.au" style="display: block;" class="dc-h13 logo-badge">
-              <img src="https://buscharter.com.au/wp-content/uploads/2026/08/logo-buscharter-au.png" alt="BusCharter.com.au" style="height: 64px; width: auto; display: block;" />
+              <img src="https://buscharter.com.au/wp-content/uploads/2026/08/logo-buscharter-au.png" alt="BusCharter.com.au" width="134" height="64" style="height: 64px; width: auto; display: block;" />
             </a>
           </div>
         </div>
@@ -187,7 +187,7 @@ function bcsbl_render_service_by_location() {
           <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
             <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8A96;">Powered by</div>
             <a target="_blank" rel="noopener noreferrer" href="https://bushire.co.nz" style="display: block;" class="dc-h31 logo-badge">
-              <img src="https://buscharter.com.au/wp-content/uploads/2026/08/logo-bushire-nz.png" alt="BusHire.co.nz" style="height: 84px; width: auto; display: block;" />
+              <img src="https://buscharter.com.au/wp-content/uploads/2026/08/logo-bushire-nz.png" alt="BusHire.co.nz" width="128" height="84" style="height: 84px; width: auto; display: block;" />
             </a>
           </div>
         </div>
@@ -214,7 +214,7 @@ function bcsbl_render_service_by_location() {
           <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
             <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8A96;">Powered by</div>
             <a target="_blank" rel="noopener noreferrer" href="https://busbank.com" style="display: block; background: #2A2A34; border-radius: 10px; padding: 16px 20px;" class="dc-h40 logo-badge">
-              <img src="https://buscharter.com.au/wp-content/uploads/2026/08/logo-busbank.png" alt="BusBank" style="height: 48px; width: auto; display: block;" />
+              <img src="https://buscharter.com.au/wp-content/uploads/2026/08/logo-busbank.png" alt="BusBank" width="196" height="48" style="height: 48px; width: auto; display: block;" />
             </a>
           </div>
         </div>
@@ -247,7 +247,7 @@ function bcsbl_render_service_by_location() {
           <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
             <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8A96;">Powered by</div>
             <a target="_blank" rel="noopener noreferrer" href="https://busbank.com" style="display: block; background: #2A2A34; border-radius: 10px; padding: 16px 20px;" class="dc-h54 logo-badge">
-              <img src="https://buscharter.com.au/wp-content/uploads/2026/08/logo-busbank.png" alt="BusBank" style="height: 48px; width: auto; display: block;" />
+              <img src="https://buscharter.com.au/wp-content/uploads/2026/08/logo-busbank.png" alt="BusBank" width="196" height="48" style="height: 48px; width: auto; display: block;" />
             </a>
           </div>
         </div>
@@ -292,3 +292,12 @@ function bcsbl_render_service_by_location() {
 HTML;
 }
 add_shortcode( 'bus_charter_service_by_location', 'bcsbl_render_service_by_location' );
+
+// Once the logo images live in the Media Library, WordPress's own
+// "add missing width/height + lazy-load attrs" pass on <img> tags rebuilds
+// the whole tag from the attachment's own metadata, dropping our
+// style="height:...;width:auto" sizing and swapping the alt text. Explicit
+// width/height attributes on our <img> tags (above) satisfy WP core's
+// documented skip condition for that; disabling lazy-loading attribute
+// injection here is a second safety net against the same class of rewrite.
+add_filter( 'wp_lazy_loading_enabled', '__return_false' );
