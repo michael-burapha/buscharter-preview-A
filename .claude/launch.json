@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "buscharter-preview-A",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "serve",
+        ".",
+        "-l",
+        "4571",
+        "--no-clipboard"
+      ],
+      "cwd": "/Volumes/Extra Drive/Claude-Projects/buscharter-preview-A",
+      "port": 4571
+    }
+  ]
+}
