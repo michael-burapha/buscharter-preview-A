@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Bus Charter - Service by Location Embed
  * Description: Renders the "Service by Location" content block via the [bus_charter_service_by_location] shortcode. Outputs raw HTML/CSS untouched by WordPress's content sanitizer, since shortcode output is never passed through wp_kses (that's the whole point of shortcodes -- they're developer-authored PHP, not user-submitted content). Use Elementor's "Shortcode" widget (not the "HTML" widget) and enter: [bus_charter_service_by_location]
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: Bus Charter
  */
 
@@ -136,7 +136,7 @@ function bcsbl_render_service_by_location() {
 <div id="sbl-embed">
   <section class="hero-section" style="width: 100%; padding: 72px 40px 8px; box-sizing: border-box;">
     <div style="display: inline-flex; align-items: center; gap: 10px; background: #FDF3F4; color: #DA1A20; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 14px; border-radius: 999px;">Global network</div>
-    <h1 class="hero-title" style="font-size: 29px; line-height: 1.2; font-weight: 700; letter-spacing: normal; margin: 20px 0 0;"><span style="color: #DA1A20;">Bus Charter</span> Locations by Country &amp; City</h1>
+    <h1 class="hero-title" style="font-size: 29px; line-height: 1.2; font-weight: 700; letter-spacing: normal; margin: 20px 0 0;"><span style="color: #DA1A20;">Bus Charter</span> Locations by Country and City</h1>
     <p style="font-size: 16px; line-height: 1.65; color: #0D0001; margin: 20px 0 0; max-width: 72ch; text-wrap: pretty;">Charter a bus in four countries through one group of operators. Each region is run by a local team with local drivers, local accreditation, and the same best-value guarantee. Choose your country to see the cities we cover.</p>
   </section>
   <section class="locations-section" style="width: 100%; padding: 48px 40px 96px; box-sizing: border-box; display: flex; flex-direction: column; gap: 28px;">
@@ -151,7 +151,7 @@ function bcsbl_render_service_by_location() {
           <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
             <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8A96;">Powered by</div>
             <a target="_blank" rel="noopener noreferrer" href="https://buscharter.com.au" style="display: block;" class="dc-h13 logo-badge">
-              <img src="https://buscharter.com.au/wp-content/uploads/2026/08/logo-buscharter-au.png" alt="BusCharter.com.au" width="134" height="64" style="height: 64px; width: auto; display: block;" />
+              <img src="https://buscharter.com.au/wp-content/uploads/2026/08/logo-buscharter-au.png" width="134" height="64" alt="BusCharter.com.au" style="height: 64px; width: auto; display: block;" />
             </a>
           </div>
         </div>
@@ -187,7 +187,7 @@ function bcsbl_render_service_by_location() {
           <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
             <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8A96;">Powered by</div>
             <a target="_blank" rel="noopener noreferrer" href="https://bushire.co.nz" style="display: block;" class="dc-h31 logo-badge">
-              <img src="https://buscharter.com.au/wp-content/uploads/2026/08/logo-bushire-nz.png" alt="BusHire.co.nz" width="128" height="84" style="height: 84px; width: auto; display: block;" />
+              <img src="https://buscharter.com.au/wp-content/uploads/2026/08/logo-bushire-nz.png" width="128" height="84" alt="BusHire.co.nz" style="height: 84px; width: auto; display: block;" />
             </a>
           </div>
         </div>
@@ -214,7 +214,7 @@ function bcsbl_render_service_by_location() {
           <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
             <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8A96;">Powered by</div>
             <a target="_blank" rel="noopener noreferrer" href="https://busbank.com" style="display: block; background: #2A2A34; border-radius: 10px; padding: 16px 20px;" class="dc-h40 logo-badge">
-              <img src="https://buscharter.com.au/wp-content/uploads/2026/08/logo-busbank.png" alt="BusBank" width="196" height="48" style="height: 48px; width: auto; display: block;" />
+              <img src="https://buscharter.com.au/wp-content/uploads/2026/08/logo-busbank.png" width="196" height="48" alt="BusBank" style="height: 48px; width: auto; display: block;" />
             </a>
           </div>
         </div>
@@ -247,7 +247,7 @@ function bcsbl_render_service_by_location() {
           <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
             <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8A96;">Powered by</div>
             <a target="_blank" rel="noopener noreferrer" href="https://busbank.com" style="display: block; background: #2A2A34; border-radius: 10px; padding: 16px 20px;" class="dc-h54 logo-badge">
-              <img src="https://buscharter.com.au/wp-content/uploads/2026/08/logo-busbank.png" alt="BusBank" width="196" height="48" style="height: 48px; width: auto; display: block;" />
+              <img src="https://buscharter.com.au/wp-content/uploads/2026/08/logo-busbank.png" width="196" height="48" alt="BusBank" style="height: 48px; width: auto; display: block;" />
             </a>
           </div>
         </div>
