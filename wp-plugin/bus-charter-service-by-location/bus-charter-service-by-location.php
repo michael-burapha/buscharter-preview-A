@@ -275,7 +275,7 @@ function bcsbl_render_service_by_location() {
     </article>
   </section>
   <section style="width: 100%; padding: 0 40px 48px; box-sizing: border-box; text-align: center;">
-    <p style="font-size: 14px; margin: 0;"><a target="_blank" rel="noopener noreferrer" href="#" style="color: #8A8A96; font-weight: 500;" class="dc-h88">Learn more about our partnership with <span style="color: #DA1A20; font-weight: 600;">BusBank</span></a></p>
+    <p style="font-size: 14px; margin: 0;"><a target="_blank" rel="noopener noreferrer" href="https://buscharter.com.au/articles/usa-canada-partnership-busbank/" style="color: #8A8A96; font-weight: 500;" class="dc-h88">Learn more about our partnership with <span style="color: #DA1A20; font-weight: 600;">BusBank</span></a></p>
   </section>
   <section class="cta-section" style="background: #F4F4F6; border-top: 1px solid #E3E3E8;">
     <div class="cta-inner" style="max-width: 1280px; margin: 0 auto; padding: 56px 40px; display: flex; align-items: center; justify-content: space-between; gap: 40px;">
